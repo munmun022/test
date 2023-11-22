@@ -9,7 +9,7 @@ pipeline {
                 
                 // Build the Spring Boot application using Maven
                 script {
-                    sh 'mvn clean install'
+                    bat 'mvn clean install'
                 }
             }
         }
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // Run tests using Maven
                 script {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }
@@ -36,4 +36,3 @@ pipeline {
         }
     }
 }
-
